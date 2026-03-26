@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becky Allen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fafaf9;
+            color: #1c1917;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .headshot {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            display: block;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .bio {
+            color: #57534e;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #a8a29e;
+            margin-bottom: 0.75rem;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            margin-bottom: 2rem;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.875rem 1.25rem;
+            background: #ffffff;
+            border: 1px solid #e7e5e4;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #1c1917;
+            font-size: 0.95rem;
+            font-weight: 450;
+            transition: all 0.15s ease;
+        }
+
+        .links a:hover {
+            border-color: #d6d3d1;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            transform: translateY(-1px);
+        }
+
+        .links a:active {
+            transform: translateY(0);
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .books {
+            display: flex;
+            flex-direction: column;
+            gap: 0.625rem;
+            margin-bottom: 2rem;
+        }
+
+        .books a {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.875rem 1.25rem;
+            background: #ffffff;
+            border: 1px solid #e7e5e4;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #1c1917;
+            font-size: 0.95rem;
+            font-weight: 450;
+            transition: all 0.15s ease;
+        }
+
+        .books a:hover {
+            border-color: #d6d3d1;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            transform: translateY(-1px);
+        }
+
+        .books a .subtitle {
+            font-size: 0.8rem;
+            color: #78716c;
+            font-weight: 400;
+        }
+
+        .books a .text {
+            text-align: left;
+        }
+
+        .archive {
+            margin-top: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e7e5e4;
+        }
+
+        .archive a {
+            color: #a8a29e;
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: color 0.15s ease;
+        }
+
+        .archive a:hover {
+            color: #78716c;
+        }
+
+        /* Social row for compact social links */
+        .social-row {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-row a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: #ffffff;
+            border: 1px solid #e7e5e4;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #57534e;
+            transition: all 0.15s ease;
+        }
+
+        .social-row a:hover {
+            border-color: #d6d3d1;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+            transform: translateY(-1px);
+            color: #1c1917;
+        }
+
+        .social-row a svg {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="headshot.jpg" alt="Becky Allen" class="headshot">
+        <h1>Becky Allen</h1>
+        <p class="bio">Teaching | Instruction | Learning | Assessment</p>
+
+        <div class="section-label">Writing</div>
+        <div class="links">
+            <a href="https://profbeckyallen.substack.com/" target="_blank" rel="noopener">
+                <span class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16"/><path d="M4 8h16"/><path d="M4 12l8 6 8-6"/></svg>
+                </span>
+                Personal Substack
+            </a>
+            <a href="https://100assessment.substack.com/" target="_blank" rel="noopener">
+                <span class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16"/><path d="M4 8h16"/><path d="M4 12l8 6 8-6"/></svg>
+                </span>
+                100% Assessment
+            </a>
+            <a href="https://scholar.google.co.uk/citations?hl=en&user=LyfyULkAAAAJ" target="_blank" rel="noopener">
+                <span class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </span>
+                Google Scholar
+            </a>
+        </div>
+
+        <div class="section-label">Books</div>
+        <div class="books">
+            <a href="http://amzn.to/2F5FR8w" target="_blank" rel="noopener">
+                <span class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </span>
+                <span class="text">
+                    The Teacher Gap
+                </span>
+            </a>
+            <a href="https://t.co/sOujPbfoFj" target="_blank" rel="noopener">
+                <span class="icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                </span>
+                <span class="text">
+                    The Next Big Thing in School Improvement
+                </span>
+            </a>
+        </div>
+
+        <div class="section-label">Find me</div>
+        <div class="social-row">
+            <a href="https://x.com/profbeckyallen" target="_blank" rel="noopener" title="X (Twitter)">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://bsky.app/profile/profbeckyallen.bsky.social" target="_blank" rel="noopener" title="Bluesky">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.643 3.593 3.282 6.138 3.026-4.322.436-8.143 2.49-2.597 8.727 5.579 5.637 7.407-1.976 7.835-3.906.428 1.93 2.256 9.543 7.835 3.906 5.546-6.237 1.725-8.29-2.597-8.727 2.545.256 5.353-.383 6.138-3.026C23.622 9.418 24 4.458 24 3.768c0-.69-.139-1.861-.902-2.203-.659-.3-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/becky-allen-89601533/" target="_blank" rel="noopener" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+        </div>
+
+        <div class="archive">
+            <a href="https://beckyallen.wordpress.com">Writing archive (2011–2023) &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>
